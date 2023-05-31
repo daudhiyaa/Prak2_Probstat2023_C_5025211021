@@ -40,6 +40,8 @@ Berdasarkan data pada tabel diatas, diketahui kadar saturasi oksigen dari respon
   ```
 
   #### Hasil :
+  
+![1A](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/ee5a97fc-f2e8-41af-981a-5818a96a1636)
 
 - ### Poin B
 
@@ -54,6 +56,8 @@ Berdasarkan data pada tabel diatas, diketahui kadar saturasi oksigen dari respon
   ```
 
   #### Hasil :
+  
+![1B](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/95b8fed6-e40c-4e20-be98-2a2033402608)
 
 - ### Poin C
 
@@ -122,6 +126,8 @@ Diketahui perusahaan memiliki seorang data analyst ingin memecahkan permasalahan
   ```
 
   #### Hasil :
+  
+![3B](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/b1078937-7dff-487a-9481-f70cefd769b1)
 
 - ### Poin C
 
@@ -137,6 +143,8 @@ Diketahui perusahaan memiliki seorang data analyst ingin memecahkan permasalahan
   ```
 
   #### Hasil :
+  
+![3C](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/54abd521-ba6c-4627-a95b-fbccf2bde3a1)
 
 - ### Poin D
 
@@ -151,6 +159,8 @@ Diketahui perusahaan memiliki seorang data analyst ingin memecahkan permasalahan
   ```
 
   #### Hasil :
+  
+![3D](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/48281a07-a0f4-4476-bda3-23fe2a5e6be8)
 
 - ### Poin E
 
@@ -202,6 +212,8 @@ Percobaan dilakukan sebanyak 27 kali dan didapat data sebagai berikut: [Link Dat
   ```
 
   #### Hasil :
+ 
+![4A](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/c49139f4-eb28-4565-8111-43e939c752ee)
 
 - ### Poin B
 
@@ -221,6 +233,8 @@ Percobaan dilakukan sebanyak 27 kali dan didapat data sebagai berikut: [Link Dat
   ```
 
   #### Hasil :
+  
+![4B](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/31f5425b-8530-4570-bc06-280cc3f51b47)
 
 - ### Poin C
 
@@ -238,5 +252,7 @@ Percobaan dilakukan sebanyak 27 kali dan didapat data sebagai berikut: [Link Dat
   ```
 
   #### Hasil :
+
+![4C](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/35984b81-e0bc-4b44-900c-077a355575b2)
 
 # <div align="center"><p> Sekian dan Terima Kasih</p></div>
