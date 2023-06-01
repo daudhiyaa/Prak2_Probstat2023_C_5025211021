@@ -14,7 +14,20 @@
 
 # No 2
   # Poin A & C
-  # Jawaban terlampir di README.md
+  library(BSDA)
+  mu <- 25000
+  n_x <- 100
+  mean_x <- 23500
+  sd <- 3000
+  
+  zsum.test(
+    mean.x = mean_x, 
+    sigma.x = sd, 
+    n.x = n_x,
+    alternative = "greater", 
+    mu = mu, 
+    conf.level=0.95
+  )
 
 # No 3
   # Poin A
@@ -24,14 +37,17 @@
   library(BSDA)
   tsum.test(mean.x=3.64, s.x = 1.67, n.x = 20, 
             mean.y =2.79 , s.y = 1.5, n.y = 27, 
-            alternative = "greater", var.equal = TRUE)
+            alternative = "two.side", var.equal = TRUE)
   
   # Poin C
   library(mosaic)
   plotDist(dist = 't', df = 2, col = "red")
   
   # Poin D
-  qchisq(p = 0.05, df = 2, lower.tail = FALSE)
+  kritikal_kiri <- qt(p = 0.025, df = 2, lower.tail = TRUE)
+  kritikal_kanan <- qt(p = 0.025, df = 2, lower.tail = FALSE)
+  kritikal_kiri
+  kritikal_kanan
   
   # Poin E & F
   # Jawaban terlampir di README.md
@@ -47,18 +63,12 @@
   nama_file <- "GTL.csv"
   GTL <- read_csv(nama_file)
   head(GTL)
-  
   str(GTL)
-  
   qplot(x = Temp, y = Light, geom = "point", data = GTL) + facet_grid(.~Glass, labeller = label_both)
   
   # Poin B
-  GTL$Glass <- as.factor(GTL$Glass)
-  GTL$Temp_Factor <- as.factor(GTL$Temp)
-  str(GTL)
-  
-  anova <- aov(Light ~ Glass*Temp_Factor, data = GTL)
-  summary(anova)
+  model <- aov(Light ~ Glass*Temp, data = GTL)
+  anova(model)
   
   # Poin C
   data_summary <- group_by(GTL, Glass, Temp) %>%

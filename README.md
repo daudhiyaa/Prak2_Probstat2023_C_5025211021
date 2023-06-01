@@ -40,8 +40,8 @@ Berdasarkan data pada tabel diatas, diketahui kadar saturasi oksigen dari respon
   ```
 
   #### Hasil :
-  
-![1A](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/ee5a97fc-f2e8-41af-981a-5818a96a1636)
+
+  ![1A](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/ee5a97fc-f2e8-41af-981a-5818a96a1636)
 
 - ### Poin B
 
@@ -56,8 +56,8 @@ Berdasarkan data pada tabel diatas, diketahui kadar saturasi oksigen dari respon
   ```
 
   #### Hasil :
-  
-![1B](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/95b8fed6-e40c-4e20-be98-2a2033402608)
+
+  ![1B](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/95b8fed6-e40c-4e20-be98-2a2033402608)
 
 - ### Poin C
 
@@ -65,11 +65,21 @@ Berdasarkan data pada tabel diatas, diketahui kadar saturasi oksigen dari respon
 
   #### Jawaban :
 
-  Diketahui `p-value` adalah 0.0001373. Karena nilai nya lebih kacil dari `𝛼 = 0.05`, maka H0 nya ditolak. Sehingga ada pengaruh secara statistika dalam kadar saturasi ooksigen sebelum dan sesudah melakukan aktivitas A.
+  Diketahui `p-value` adalah 0.0001373. Karena nilai nya lebih kacil dari `𝛼 = 0.05`, maka H0 nya ditolak. Sehingga ada pengaruh secara statistika dalam kadar saturasi ooksigen sebelum dan sesudah melakukan aktivitas 𝐴.
 
 ## No 2
 
 Diketahui bahwa mobil dikemudikan rata-rata lebih dari 25.000 kilometer per tahun. Untuk menguji klaim ini, 100 pemilik mobil yang dipilih secara acak diminta untuk mencatat jarak yang mereka tempuh. Jika sampel acak menunjukkan rata-rata 23.500 kilometer dan standar deviasi 3.000 kilometer
+
+```r
+library(BSDA)
+mu <- 25000
+n_x <- 100
+mean_x <- 23500
+sd <- 3000
+
+zsum.test(mean.x = mean_x, sigma.x = sd, n.x = n_x, alternative = "greater", mu = mu, conf.level=0.95)
+```
 
 - ### Poin A
 
@@ -79,7 +89,7 @@ Diketahui bahwa mobil dikemudikan rata-rata lebih dari 25.000 kilometer per tahu
 
   Saya tidak setuju. Dengan rata-rata 23.500 km dari sampel acak dan `sd` 3.000 km maka lebih besar kemungkinan bahwa klaim tersebut tidak valid. Grafik persebaran data dari distribusi normal akan lebih pekat di daerah kurang dari 25.000 km dengan asumsi nilai tengah grafik adalah nilai rata-rata dari sampel acak yang didapat.
 
-  22904.73 - 24095.27
+  <!-- 22904.73 - 24095.27 -->
 
 - ### Poin C
 
@@ -87,7 +97,7 @@ Diketahui bahwa mobil dikemudikan rata-rata lebih dari 25.000 kilometer per tahu
 
   #### Jawaban :
 
-  Nilai probabilitas lebih kecil dibanding `𝛼 = 0.05` maka H0 nya ditolak, sehingga didapat kesimpulan bahwa mobil dikemudikan rata-rata tidak lebih dari 25.000 km per tahun.
+  Nilai $p\text{-value}$ yang dihasilkan lebih dari significance level $(1 > 0.05)$ maka $H_0$ nya diterima, sehingga didapat kesimpulan bahwa mobil dikemudikan rata-rata tidak lebih dari 25.000 km per tahun.
 
 ## No 3
 
@@ -122,12 +132,10 @@ Diketahui perusahaan memiliki seorang data analyst ingin memecahkan permasalahan
   library(BSDA)
   tsum.test(mean.x=3.64, s.x = 1.67, n.x = 20,
             mean.y =2.79 , s.y = 1.5, n.y = 27,
-            alternative = "greater", var.equal = TRUE)
+            alternative = "two.side", var.equal = TRUE)
   ```
 
   #### Hasil :
-  
-![3B](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/b1078937-7dff-487a-9481-f70cefd769b1)
 
 - ### Poin C
 
@@ -143,8 +151,8 @@ Diketahui perusahaan memiliki seorang data analyst ingin memecahkan permasalahan
   ```
 
   #### Hasil :
-  
-![3C](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/54abd521-ba6c-4627-a95b-fbccf2bde3a1)
+
+  ![3C](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/54abd521-ba6c-4627-a95b-fbccf2bde3a1)
 
 - ### Poin D
 
@@ -152,15 +160,14 @@ Diketahui perusahaan memiliki seorang data analyst ingin memecahkan permasalahan
 
   #### Solusi :
 
-  Untuk mendapatkan nilai kritikal, kita bisa menggunakan fungsi `qchisq()` dengan parameter p dan df
+  Untuk mendapatkan nilai kritikal, kita bisa menggunakan fungsi `qt()` dengan parameter p dan df
 
   ```r
-  qchisq(p = 0.05, df = 2, lower.tail = FALSE)
+  kritikal_kiri <- qt(p = 0.025, df = 2, lower.tail = TRUE)
+  kritikal_kanan <- qt(p = 0.025, df = 2, lower.tail = FALSE)
   ```
 
   #### Hasil :
-  
-![3D](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/48281a07-a0f4-4476-bda3-23fe2a5e6be8)
 
 - ### Poin E
 
@@ -168,7 +175,7 @@ Diketahui perusahaan memiliki seorang data analyst ingin memecahkan permasalahan
 
   #### Jawaban :
 
-  Keputusan bisa kita peroleh dengan menggunakan distribusi t pada fungsi `t.test()`.
+  Nilai $t$ berada pada rentang nilai kritikal dan $p\text{-value}$ lebih dari significance level $(p\text{-value} > \alpha)$, maka gagal menolak $H_0$
 
 - ### Poin F
 
@@ -176,7 +183,7 @@ Diketahui perusahaan memiliki seorang data analyst ingin memecahkan permasalahan
 
   #### Jawaban :
 
-  Kesimpulan yang didapat yaitu ketika dilihat dari uji statistik tidak ditemukan perbedaan rata-rata.
+  Kesimpulan yang didapat yaitu ketika dilihat dari uji statistik bawah tidak ditemukan perbedaan rata-rata, bahwa berdasarkan data yang tersedia dan dengan tingkat signifikansi ($\alpha = 0.05$), tidak terdapat cukup bukti statistik untuk mendukung adanya perbedaan yang signifikan antara rata-rata jumlah saham di Bandung dan Bali.
 
 ## No 4
 
@@ -205,15 +212,13 @@ Percobaan dilakukan sebanyak 27 kali dan didapat data sebagai berikut: [Link Dat
   nama_file <- "GTL.csv"
   GTL <- read_csv(nama_file)
   head(GTL)
-
   str(GTL)
-
   qplot(x = Temp, y = Light, geom = "point", data = GTL) + facet_grid(.~Glass, labeller = label_both)
   ```
 
   #### Hasil :
- 
-![4A](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/c49139f4-eb28-4565-8111-43e939c752ee)
+
+  ![4A](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/c49139f4-eb28-4565-8111-43e939c752ee)
 
 - ### Poin B
 
@@ -221,20 +226,14 @@ Percobaan dilakukan sebanyak 27 kali dan didapat data sebagai berikut: [Link Dat
 
   #### Solusi :
 
-  Menggunakan fungsi `aov()` dengan parameter variabel factor dan `summary()` dengan parameter fungsi `aov()` bisa dilakukan uji ANOVA.
+  Menggunakan fungsi `aov()` dengan parameter variabel factor dan `anova()` dengan parameter fungsi `model` bisa dilakukan uji ANOVA.
 
   ```r
-  GTL$Glass <- as.factor(GTL$Glass)
-  GTL$Temp_Factor <- as.factor(GTL$Temp)
-  str(GTL)
-
-  anova <- aov(Light ~ Glass*Temp_Factor, data = GTL)
-  summary(anova)
+  model <- aov(Light ~ Glass*Temp, data = GTL)
+  anova(model)
   ```
 
   #### Hasil :
-  
-![4B](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/31f5425b-8530-4570-bc06-280cc3f51b47)
 
 - ### Poin C
 
@@ -253,6 +252,6 @@ Percobaan dilakukan sebanyak 27 kali dan didapat data sebagai berikut: [Link Dat
 
   #### Hasil :
 
-![4C](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/35984b81-e0bc-4b44-900c-077a355575b2)
+  ![4C](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/35984b81-e0bc-4b44-900c-077a355575b2)
 
 # <div align="center"><p> Sekian dan Terima Kasih</p></div>
