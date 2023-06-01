@@ -81,13 +81,15 @@ sd <- 3000
 zsum.test(mean.x = mean_x, sigma.x = sd, n.x = n_x, alternative = "greater", mu = mu, conf.level=0.95)
 ```
 
+![2](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/69e99d29-9b05-4a52-9d89-3a2ee606bfea)
+
 - ### Poin A
 
   Apakah Anda setuju dengan klaim tersebut? Jelaskan.
 
   #### Jawaban :
 
-  Saya tidak setuju. Dengan rata-rata 23.500 km dari sampel acak dan `sd` 3.000 km maka lebih besar kemungkinan bahwa klaim tersebut tidak valid. Grafik persebaran data dari distribusi normal akan lebih pekat di daerah kurang dari 25.000 km dengan asumsi nilai tengah grafik adalah nilai rata-rata dari sampel acak yang didapat.
+  Tidak setuju. Dengan rata-rata 23.500 km dari sampel acak dan `sd` 3.000 km maka lebih besar kemungkinan bahwa klaim tersebut tidak valid. Grafik persebaran data dari distribusi normal akan lebih pekat di daerah kurang dari 25.000 km dengan asumsi nilai tengah grafik adalah nilai rata-rata dari sampel acak yang didapat.
 
   <!-- 22904.73 - 24095.27 -->
 
@@ -136,6 +138,8 @@ Diketahui perusahaan memiliki seorang data analyst ingin memecahkan permasalahan
   ```
 
   #### Hasil :
+  
+  ![3B](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/9a23cd59-24d9-4648-99d7-18ae98633bbd)
 
 - ### Poin C
 
@@ -168,6 +172,8 @@ Diketahui perusahaan memiliki seorang data analyst ingin memecahkan permasalahan
   ```
 
   #### Hasil :
+  
+  ![3D](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/8f8aa053-02cd-4b3e-b215-04f41a7c8421)
 
 - ### Poin E
 
@@ -234,6 +240,8 @@ Percobaan dilakukan sebanyak 27 kali dan didapat data sebagai berikut: [Link Dat
   ```
 
   #### Hasil :
+  
+  ![4B](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/b1a7a8fd-24a4-413f-8ef3-b9f1e4811c64)
 
 - ### Poin C
 
