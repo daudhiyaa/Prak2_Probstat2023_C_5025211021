@@ -41,7 +41,7 @@ Berdasarkan data pada tabel diatas, diketahui kadar saturasi oksigen dari respon
 
   #### Hasil :
 
-  ![1A](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/ee5a97fc-f2e8-41af-981a-5818a96a1636)
+  <img src="images/1A.png"/>
 
 - ### Poin B
 
@@ -57,7 +57,7 @@ Berdasarkan data pada tabel diatas, diketahui kadar saturasi oksigen dari respon
 
   #### Hasil :
 
-  ![1B](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/95b8fed6-e40c-4e20-be98-2a2033402608)
+  <img src="images/1B.png"/>
 
 - ### Poin C
 
@@ -81,7 +81,7 @@ sd <- 3000
 zsum.test(mean.x = mean_x, sigma.x = sd, n.x = n_x, alternative = "greater", mu = mu, conf.level=0.95)
 ```
 
-![2](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/69e99d29-9b05-4a52-9d89-3a2ee606bfea)
+<img src="images/2.png"/>
 
 - ### Poin A
 
@@ -139,7 +139,7 @@ Diketahui perusahaan memiliki seorang data analyst ingin memecahkan permasalahan
 
   #### Hasil :
   
-  ![3B](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/9a23cd59-24d9-4648-99d7-18ae98633bbd)
+  <img src="images/3B.png"/>
 
 - ### Poin C
 
@@ -155,8 +155,8 @@ Diketahui perusahaan memiliki seorang data analyst ingin memecahkan permasalahan
   ```
 
   #### Hasil :
-
-  ![3C](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/54abd521-ba6c-4627-a95b-fbccf2bde3a1)
+  
+  <img src="images/3C.png"/>
 
 - ### Poin D
 
@@ -173,7 +173,7 @@ Diketahui perusahaan memiliki seorang data analyst ingin memecahkan permasalahan
 
   #### Hasil :
   
-  ![3D](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/8f8aa053-02cd-4b3e-b215-04f41a7c8421)
+  <img src="images/3D.png"/>
 
 - ### Poin E
 
@@ -224,7 +224,7 @@ Percobaan dilakukan sebanyak 27 kali dan didapat data sebagai berikut: [Link Dat
 
   #### Hasil :
 
-  ![4A](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/c49139f4-eb28-4565-8111-43e939c752ee)
+  <img src="images/4A.png"/>
 
 - ### Poin B
 
@@ -241,7 +241,7 @@ Percobaan dilakukan sebanyak 27 kali dan didapat data sebagai berikut: [Link Dat
 
   #### Hasil :
   
-  ![4B](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/b1a7a8fd-24a4-413f-8ef3-b9f1e4811c64)
+  <img src="images/4B.png"/>
 
 - ### Poin C
 
@@ -260,6 +260,6 @@ Percobaan dilakukan sebanyak 27 kali dan didapat data sebagai berikut: [Link Dat
 
   #### Hasil :
 
-  ![4C](https://github.com/daudhiyaa/Prak2_Probstat2023_C_5025211021/assets/90663569/35984b81-e0bc-4b44-900c-077a355575b2)
+  <img src="images/4C.png"/>
 
 # <div align="center"><p> Sekian dan Terima Kasih</p></div>
