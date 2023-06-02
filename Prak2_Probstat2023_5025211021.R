@@ -52,7 +52,7 @@
   # Poin E & F
   # Jawaban terlampir di README.md
   
-# Soal 5
+# Soal 4
   install.packages("multcompView")
   library(readr)
   library(ggplot2)
